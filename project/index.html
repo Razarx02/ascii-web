@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<head>
+        <meta charset="UTF-8" />
+        <title>ASCII-ART-WEB</title>
+        <link rel="stylesheet" type="text/css" href="/assets/style.css" />
+</head>
+<body>  
+    
+  <form action="/toart/" method="GET">
+        <div class = "head">  <p class="titlein"> ASCII-ART-WEB </p>
+                <textarea  class = "textarea" name="body" wrap="off"></textarea>
+                <div  class="shablons"> 
+                                <select name="fs" id="fs">
+                                <option value="standart">
+                                standart
+                                </option>
+                                <option value="shadow">
+                                shadow
+                                </option>
+                                <option value="thinkertoy">
+                                thinkertoy
+                                </option>
+                                </select>
+                    </div>
+                <div class="button">
+                    <input type="submit" value="Submit">
+                </div>
+                
+        </div>   
+    </form>
+    <pre class="OUTPUT">{{ .Output }}</pre>
+</body> 
